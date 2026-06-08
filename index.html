@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KV Bots | Bots de Discord Personalizados</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#0f1117;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,17,23,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#5865F2;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#5865F2;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    radial-gradient(circle at top,#5865F233,transparent 50%);
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#5865F2;
+}
+
+.hero p{
+    font-size:20px;
+    color:#b4b8c5;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#5865F2;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:100px 0;
+}
+
+.title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#171b25;
+    padding:30px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.05);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#5865F2;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#5865F2;
+}
+
+.card p{
+    color:#b4b8c5;
+}
+
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.price-card{
+    background:#171b25;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.price{
+    font-size:50px;
+    color:#5865F2;
+    margin:20px 0;
+}
+
+.price-card ul{
+    list-style:none;
+    margin:25px 0;
+}
+
+.price-card li{
+    margin:12px 0;
+    color:#b4b8c5;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:#171b25;
+    padding:40px;
+    border-radius:20px;
+}
+
+.contact h3{
+    color:#5865F2;
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#8a8f9d;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:42px;
+}
+
+nav ul{
+    display:none;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">KV Bots</div>
+
+<ul>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#planes">Planes</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Desarrollo de <span>Bots de Discord</span></h1>
+
+<p>
+Bots profesionales, rápidos y personalizados para comunidades,
+gaming, roleplay, staff y empresas.
+</p>
+
+<a href="#contacto" class="btn">
+Solicitar Bot
+</a>
+</div>
+</section>
+
+<section id="servicios">
+<div class="container">
+
+<h2 class="title">Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Moderación</h3>
+<p>
+Sistemas automáticos para proteger y gestionar tu servidor.
+</p>
+</div>
+
+<div class="card">
+<h3>Tickets</h3>
+<p>
+Soporte profesional mediante paneles y botones.
+</p>
+</div>
+
+<div class="card">
+<h3>Fichaje Staff</h3>
+<p>
+Control horario completo con estadísticas y rankings.
+</p>
+</div>
+
+<div class="card">
+<h3>Economía</h3>
+<p>
+Monedas, recompensas y sistemas personalizados.
+</p>
+</div>
+
+<div class="card">
+<h3>Verificación</h3>
+<p>
+Protección contra cuentas falsas y spam.
+</p>
+</div>
+
+<div class="card">
+<h3>Bots Personalizados</h3>
+<p>
+Creamos cualquier sistema que necesites.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="planes">
+
+<div class="container">
+
+<h2 class="title">Planes</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+<h3>Básico</h3>
+<div class="price">$10</div>
+
+<ul>
+<li>Hasta 5 comandos</li>
+<li>Configuración incluida</li>
+<li>Soporte básico</li>
+</ul>
+
+<a href="#contacto" class="btn">
+Comprar
+</a>
+
+</div>
+
+<div class="price-card">
+<h3>Intermedio</h3>
+<div class="price">$25</div>
+
+<ul>
+<li>Base de datos</li>
+<li>Botones y paneles</li>
+<li>Funciones avanzadas</li>
+</ul>
+
+<a href="#contacto" class="btn">
+Comprar
+</a>
+
+</div>
+
+<div class="price-card">
+<h3>Premium</h3>
+<div class="price">$50+</div>
+
+<ul>
+<li>Desarrollo a medida</li>
+<li>Sistemas complejos</li>
+<li>Soporte prioritario</li>
+</ul>
+
+<a href="#contacto" class="btn">
+Comprar
+</a>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+<section id="contacto">
+
+<div class="container">
+
+<h2 class="title">Contacto</h2>
+
+<div class="contact-box">
+
+<h3>¿Necesitas un bot?</h3>
+
+<p style="color:#b4b8c5; margin-top:10px;">
+Contáctame por Discord para solicitar presupuesto.
+</p>
+
+<br>
+
+<h2>Discord: TU_USUARIO</h2>
+
+<br>
+
+<a class="btn" href="#">
+Abrir Discord
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 KV Bots — Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
